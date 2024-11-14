@@ -42,7 +42,7 @@
         .header {
             display: inline-block;
             vertical-align: middle;
-            width: 10ch;
+            width: 15rem;
             margin-right: 1.5rem;
             font-family: 'Switzer-Regular', Arial, sans-serif;
             font-size: var(--my-space-16);
@@ -99,9 +99,11 @@
             }
         }
 
-        @media only screen and (max-width:479px) {
+        @media only screen and (max-width:767px) {
             .header {
                 font-family: 'Switzer-ExtralightItalic', Arial, sans-serif;
+                width: inherit;
+                margin-right: 0rem;
             }
 
             .value {
@@ -115,7 +117,9 @@
                 align-items: center;
                 margin-bottom: var(--my-space-09)
             }
+        }
 
+        @media only screen and (max-width:479px) {
             .contact-details div a {
                 text-align: center;
             }
@@ -135,11 +139,6 @@
 
             .title {
                 font-size: var(--my-space-23);
-            }
-
-            .header {
-                width: inherit;
-                margin-right: 0rem;
             }
 
             .whatsapp-qr {
