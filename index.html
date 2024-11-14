@@ -315,7 +315,7 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            column-gap: var(--my-space-30);
+            column-gap: var(--my-space-40);
             padding: var(--my-space-40) var(--my-space-40);
             margin-bottom: 20rem;
             background-color: var(--my-slate-200);
@@ -347,6 +347,8 @@
 
         .reason-list {
             flex-basis: 1;
+            list-style-type: disc;
+            padding-left: var(--my-space-19);
         }
 
         .reason-list:hover {
@@ -366,10 +368,6 @@
         }
 
         @media only screen and (max-width:860px) {
-            .reason-list {
-                list-style-type: disc;
-            }
-
             .reason {
                 margin-bottom: 15rem;
             }
