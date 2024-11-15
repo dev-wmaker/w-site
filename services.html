@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Waymaker is Top Outsourced Accounting Service Firm base in Selangor Malaysia. We offer services and consultation related to accounting, company & personal tax, company secretary and financial planning.">
-    <meta name="keywords" content="accounting, payroll management, tax planning, tax consultation, gst consultation, sst consultation, company secretary, company registration, will planning, estate planning, will and estate planning, insurance services">
+    <meta name="description"
+        content="Waymaker is Top Outsourced Accounting Service Firm base in Selangor Malaysia. We offer services and consultation related to accounting, company & personal tax, company secretary and financial planning.">
+    <meta name="keywords"
+        content="accounting, payroll management, tax planning, tax consultation, gst consultation, sst consultation, company secretary, company registration, will planning, estate planning, will and estate planning, insurance services">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Waymaker | Services</title>
     <script src="assets/tailwindcss-3.4.14.js"></script>
@@ -36,10 +38,8 @@
 
         .service-card {
             position: relative;
-            flex-basis: 18rem;
             box-sizing: border-box;
-            min-width: 15rem;
-
+            width: 20%;
             height: 20rem;
             margin: var(--my-space-13);
             background-image: url(assets/img-services/payroll.webp);
@@ -70,15 +70,50 @@
             text-align: center;
         }
 
+        @media only screen and (max-width:1280px) {
+            .service-card {
+                width: 25%;
+            }
+        }
+
+        @media only screen and (max-width:1079px) {
+            .content {
+                padding: var(--my-space-19) var(--my-space-16) 0rem var(--my-space-16);
+            }
+
+            .service-card {
+                width: 30%;
+            }
+        }
+
         @media only screen and (max-width:767px) {
-            .service-card-container {
-                flex-direction: column;
+            .service-card {
+                width: 35%;
             }
         }
 
         @media only screen and (max-width:479px) {
+            .content {
+                padding-bottom: 3rem;
+            }
+
             .title {
                 font-size: var(--my-space-23);
+            }
+
+            .service-card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-card {
+                height: 5rem;
+                width: 18rem;
+            }
+
+            .service-card:hover {
+                transform: translateY(-0.3rem);
+                box-shadow: 0rem 0.3rem 0.9rem 0.2rem var(--my-slate-400);
             }
         }
     </style>
