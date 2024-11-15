@@ -400,16 +400,9 @@
             }
         }
 
-        @media only screen and (max-width:750px) {
-            #header-slim.nav-top .nav-top-left {
-                display: none;
-            }
-        }
-
         @media only screen and (max-width:479px) {
             .reason {
                 padding: 1rem var(--my-space-40) 2rem var(--my-space-40);
-                margin-bottom: 13rem;
                 margin-bottom: 4.5rem;
             }
         }
@@ -546,7 +539,7 @@
                 console.log("showing", isShow)
                 toggleClass(footerFat, isShow, "show");
             },
-            { threshold: 1 },
+            { threshold: 0 },
         )
         navRepositionAndHide.observe(splashLogo);
         navShow.observe(headerFat);

@@ -181,7 +181,8 @@ footer {
     }
 }
 
-@media only screen and (max-width:479px) {
+@media only screen and (max-width:479px),
+only screen and (max-height:500px) {
     .nav-top {
         padding: var(--my-space-09) var(--my-space-09);
     }
@@ -242,5 +243,16 @@ footer {
         height: 2.5rem;
         filter: brightness(0) invert(1);
         background-size: contain;
+    }
+}
+
+@media only screen and (max-height:500px) {
+    section.reason {
+        margin-bottom: 5rem;
+    }
+
+    .nav-top-right li {
+        padding: var(--my-space-03) var(--my-space-03);
+        font-size: 1.3rem;
     }
 }
