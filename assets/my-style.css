@@ -160,6 +160,7 @@ footer {
 
     .nav-bottom .link-blocks {
         justify-content: space-between;
+        column-gap: 0.3rem;
         margin-bottom: var(--my-space-13);
         order: 1;
 
