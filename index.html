@@ -209,14 +209,19 @@
                 font-size: 2.3rem;
             }
 
-            .service-list li span {
-                display: inline-block;
-            }
-
             .service-list li {
-                padding: 0.3rem 1.6rem;
+                width: 95%;
+                /* NOTE: this will wrap tightly around text 
+                display: inline flex; 
+                flex-direction: column;
+                */
+                padding: 0.3rem 1.9rem;
                 border: 2px solid rgb(120 113 108);
                 border-radius: 50px;
+            }
+            
+            .service-list li span {
+                display: inline-block;
             }
 
             .cta a {
